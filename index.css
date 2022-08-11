@@ -1,9 +1,10 @@
+
 .main {
      width: 80%;
-    /*height: 1000px;*/
-    border: solid black 2px;
+   height: 90%;
+    /*border: solid black 2px;*/
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
@@ -20,16 +21,21 @@
     background-repeat: no-repeat;
 
 }
+
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    /*gap: 10px;*/
 }
 .box3 {
-    font-size: 35px;
+    font-size: 30px;
     text-decoration: underline;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0.5;
 }
 button {
     width: 200px;
@@ -37,6 +43,7 @@ button {
     border-radius: 50px;
     background-color: #fdbd30;
     font-size: 35px;
+    margin-bottom: 20px;
 
 }
 button:hover {
@@ -54,11 +61,12 @@ button:focus ~ .box2
     display: block;
 }
 button:focus ~ .box3 {
-    font-size: 50px;
+    font-size: 40px;
     color: #fdbd30;
     transition: all 0.5s;
     text-shadow: black 0 0 5px;
     text-decoration: none;
+    opacity: 1;
 
 }
 
@@ -66,7 +74,7 @@ button:focus ~ .box3 {
 
 
 .typewriter h1 {
-    font-size: 35px;
+    font-size: 30px;
     overflow: hidden;
     border-right: .15em solid orange;
     white-space: nowrap;
