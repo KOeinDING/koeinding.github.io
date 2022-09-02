@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>AIRCRAFT</title>
+    <meta http-equiv="Content-type" content= "text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" href="animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--**********************************************************************************-->
+<header class="header" >
+
+    <div class="header__inner contacts" >
+
+        <div class="container">
+            <div class="header__contacts">
+                <div class="header__contacts-lang">
+                    <p class="header__contacts-lang__item">РУС</p>
+                    <p class="header__contacts-lang__item">ENG</p>
+                    <p class="header__contacts-lang__item">BY</p>
+                </div>
+                <div class="header__contacts-number">
+                    +1 (206)-655-2121
+                </div>
+                <div class="header__contacts-email">info@AirSalvation.com</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__inner nav"  id="header">
+        <div class="container">
+            <div class="header__nav__row">
+                <div class="header__info">
+                    <div class="header__info__logo">
+                        <img id="airheader" src="src/airlogo.png" alt="#">
+                    </div>
+                    <div class="header__info__office">
+                        <div class="header__info__office__img">
+                            <img src="src/mark.svg" alt="#">
+                        </div>
+                        <div class="header__info__office__text">
+                            <a href="#" data-scroll="#map">Наши офисы</a>
+                        </div>
+                        <div>
+                            <button id="gabarits" onclick="myTheme()">Включить проблесковые маяки</button>
+                        </div>
+                        <div>
+                            <button id="gabarits2" onclick="myThemeRevert()">Выключить проблесковые маяки</button>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="header__nav">
+                    <a href="#" data-scroll="#slider" class="header__nav__link">УСЛУГИ</a>
+                    <a href="#" data-scroll="#about" class="header__nav__link">О КОМПАНИИ</a>
+                    <a href="#" data-scroll="#services" class="header__nav__link">ПРОДАЖИ</a>
+                    <a href="#" data-scroll="#contacts" class="header__nav__link">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__inner content" id="intro">
+        <div class="header__inner content--dark">
+            <div class="header__inner content--center">
+                <div class="container">
+                    <div class="header__main">
+                        <h1 data-wow-delay="0.5s" data-wow-duration="1s" class="wow animate__animated animate__fadeInDown">Авиаперевозки Транспорт</h1>
+                        <h2 data-wow-delay="0.5s" data-wow-duration="1s" class="wow animate__animated animate__fadeInUp">Перевозка крупногабаритных грузов по всему миру. Полное экспедирование, страхование, упаковка и хранение грузов. Продажа воздушных судов.</h2>
+                    </div>
+                    <button  class="header__mouse" onclick="PopUpShow()" >
+                        <span class="item_container">
+                            <span class="arrow_container material-symbols-outlined"> keyboard_arrow_up </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--**********************************************************************************-->
+<main>
+    <section class="section section--gray" id="slider">
+        <div class="container">
+            <div class="ts__row">
+                <div data-wow-delay="0.5s" data-wow-duration="1s" class="ts__column wow animate__animated animate__fadeInUp">
+                    <div class="ts__info">
+                        <div class="info__text">Авиаперевозки по всему миру</div>
+                        <div class="info__subtext">Страны Европы и Азии, Северная и Южная Америка, Австралия, Океания, Африка,
+                        Чартерные рейсы в Антарктику и Гренландию</div>
+                    </div>
+                        <button class="info__btn">
+                            <a id="faster" href="#" data-scroll="#about">
+                        ПОДРОБНЕЕ</a>
+                    </button>
+                </div>
+
+                <div data-wow-delay="0.5s" data-wow-duration="1s" class="ts__slider wow animate__animated animate__fadeInRight" data-slider>
+                    <div class="ts__slider__item">
+                        <img src="src/1.png" alt="#">
+                    </div>
+                    <div class="ts__slider__item">
+                        <img src="src/2.png" alt="#">
+                    </div>
+                    <div class="ts__slider__item">
+                        <img src="src/3.png" alt="#">
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="container">
+            <div data-wow-delay="0.5s" data-wow-duration="1s" class="services wow animate__animated animate__fadeInUp">
+                <div class="info__text">Продажа самолетов</div>
+                <div class="services__row">
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                Boeing 737
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                Airbus A320
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                Embraer 195
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                CRJ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                АН-124 Руслан
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                АН-225 Мрия
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                Concorde
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__info">
+                            <div class="services__circle">
+                                <div class="services__img">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__text">
+                                ТУ-134
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark" id="about">
+        <div class="container">
+            <div class="about__row">
+                <div data-wow-delay="0.5s" data-wow-duration="2s" class="about__item wow animate__animated animate__fadeInUp">
+                    <div class="info__text">О компании</div>
+                    <div class="info__subtext lorem">
+                        Мы являемся одним из крупнейших мировых производителей авиационной техники и поставщиком услуг.
+                        Штаб-квартира находится в Минске (Республика Беларусь).
+                        Место дислокации основных производственных мощностей и одновременно с этим место рождения компании — Минск (РБ).
+                        AirSalvation на протяжении многих десятилетий является крупнейшей авиационной транспортной фирмой в РБ, крупнейшим экспортёром страны, крупнейшим работодателем Минского промышленного района.
+                        Входит в двенадцать крупнейших промышленных корпораций страны и «большую тройку» изготовителей самолетов.
+                        Около половины доходов от продаж продукции и предоставляемых услуг составляет клиентский сектор (без учёта иностранных заказчиков).
+                        В состав компании входят два основных производственных подразделения: AirSalvation Commercial Airplanes (гражданские самолеты) и AirSalvation Forwarding Services (авиагрузоперевозки).
+                        Кроме того, в состав компании входят AirSalvation and Axe Capital (финансирование проектов), AirSalvation Services Linked Group (инфраструктурная поддержка) и AirSalvation Engineering, Operations & Technology (разработка, приобретение и внедрение инновационных технологий и процессов).
+
+                    </div>
+                </div>
+                <div data-wow-delay="1s" data-wow-duration="1s" class="about__item wow animate__animated animate__fadeInRight">
+                    <div class="cards__row">
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/1.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42</div>
+                                        <div class="cards__text">
+                                            офиса<br>
+                                            <span>по всему миру</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/2.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42000+</div>
+                                        <div class="cards__text">
+                                            авиаперевозок<br>
+                                            <span>за год</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/3.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42000</div>
+                                        <div class="cards__text">
+                                            самолетов<br>
+                                            <span>в производстве</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/4.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">4200</div>
+                                        <div class="cards__text">крупных<br><span>компаний-партнеров</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/5.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42 млн.</div>
+                                        <div class="cards__text">
+                                            частных<br>
+                                            <span>контактов ежегодно</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/6.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">420</div>
+                                        <div class="cards__text">
+                                            сотрудников<br>
+                                            <span>в головном офисе</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/7.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42</div>
+                                        <div class="cards__text">
+                                            проекта<br>
+                                            <span>с Boeing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/8.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42</div>
+                                        <div class="cards__text">
+                                            проекта<br>
+                                            <span>с AirBus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                    <div class="cards__front">
+                                        <img src="src/9.jpg" alt="#">
+                                    </div>
+                                    <div class="cards__back">
+                                        <div class="cards__number">42</div>
+                                        <div class="cards__text">
+                                            проекта<br>
+                                            <span>с Cessna</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                         <div class="cards__front">
+                                        <img src="src/10.jpg" alt="#">
+                                    </div>
+                                        <div class="cards__back">
+                                                        <div class="cards__number">42</div>
+                                                            <div class="cards__text">
+                                                                проекта<br>
+                                                                <span>с Bombardier</span>
+                                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                        <div class="cards__front">
+                                            <img src="src/11.jpg" alt="#">
+                                        </div>
+                                        <div class="cards__back">
+                                            <div class="cards__number">42</div>
+                                            <div class="cards__text">
+                                                проекта<br>
+                                                <span>с Cirrus</span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item__inner">
+                                        <div class="cards__front">
+                                            <img src="src/12.jpg" alt="#">
+                                        </div>
+                                        <div class="cards__back">
+                                            <div class="cards__number">42</div>
+                                            <div class="cards__text">
+                                                проекта<br>
+                                                <span>с Embraer</span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--map" id="map">
+        <div  data-wow-duration="0.5s" class="map wow animate__animated animate__fadeIn" >
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d86201.90270141815!2d-122.38156619334904!3d47.53257248299912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x5490418b717d4877%3A0x8f1bfec7bb598097!2z0JHQvtC40L3QsywgNzc1NSBFIE1hcmdpbmFsIFdheSBTLCBTZWF0dGxlLCBXQSA5ODEwOCwg0KHQvtC10LTQuNC90LXQvdC90YvQtSDQqNGC0LDRgtGL!3m2!1d47.532477899999996!2d-122.31152639999999!4m5!1s0x5490418b717d4877%3A0x8f1bfec7bb598097!2z0JHQvtC40L3QsywgNzc1NSBFIE1hcmdpbmFsIFdheSBTLCBTZWF0dGxlLCBXQSA5ODEwOCwg0KHQvtC10LTQuNC90LXQvdC90YvQtSDQqNGC0LDRgtGL!3m2!1d47.532477899999996!2d-122.31152639999999!5e0!3m2!1sru!2sby!4v1661787979959!5m2!1sru!2sby" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </section>
+</main>
+<!--**********************************************************************************-->
+<footer class="footer" id="contacts">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <img id="airfooter" src="src/footerlogo.png" alt="#">
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__adress">
+                            220113, Минск, Мележа 1, <br>
+                            центр AirSalvation corporate Parus
+                        </div>
+                        <div class="footer__site">
+                            sales@AirSalvation.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="footer__number">
+                    +1 (206)-655-2121 int. 1-206 <br>
+                    +1 (206)-655-2121 ext. 42
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <div class="footer__copyright">
+                    Разработано - AirSalvation IT.project
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--******************************popup***************************************************-->
+
+<div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+        <div class="popup_text typewriter">
+            <h1 id="first">Выберите язык / choose your language</h1>
+        </div>
+
+      <div class="buttonflex">
+          <button class="popupbutton" onclick="PopUpHide()"><a href="#" data-scroll="#slider">Русский / RU </a></button>
+          <img id="orange" src="src/paperplane.png" alt="">
+        <button class="popupbutton" onclick="alert('ВЫБЕРИТЕ РУССКИЙ/RU, ПОЖАЛУЙСТА')">Английский / EN</button>
+      </div>
+
+    </div>
+</div>
+<!--**************************************************************************************-->
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+<script src="app.js"></script>
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!--************************************popup script-->
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+        document.body.style.overflow = 'hidden';
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+        document.body.style.overflow = 'visible';
+    }
+</script>
+<!--*************************************-->
+<script>
+    function myTheme() {
+        const element1 = document.getElementById('header');
+        const element2 = document.getElementById('about');
+        const element3 = document.getElementById('slider');
+        const element4 = document.getElementById('contacts');
+        const element5 = document.getElementById('intro');
+        const element6 = document.getElementById('airheader');
+        const element7 = document.getElementById('airfooter');
+        element1.style.background = '#fdbc59';
+        element2.style.background = '#C8A35F';
+        element3.style.background = '#C8A35F';
+        element4.style.background = '#545454';
+        element5.style.background = 'url("src/bg-light.jpg") center no-repeat';
+        element6.src = "src/footerlogo.png";
+        element7.src = "src/airlogo.png";
+    }
+
+    function myThemeRevert() {
+        const element1 = document.getElementById('header');
+        const element2 = document.getElementById('about');
+        const element3 = document.getElementById('slider');
+        const element4 = document.getElementById('contacts');
+        const element5 = document.getElementById('intro');
+        const element6 = document.getElementById('airheader');
+        const element7 = document.getElementById('airfooter');
+        element1.style.background = '#545454';
+        element2.style.background = '#2F343A';
+        element3.style.background = '#393F47';
+        element4.style.background = '#fdbc59';
+        element5.style.background = 'url("src/bg.jpg") center no-repeat';
+        element5.style.height = '100%';
+        element5.style.backgroundSize = 'cover';
+        element6.src = "src/airlogo.png";
+        element7.src = "src/footerlogo.png";
+    }
+</script>
+</body>
+</html>
